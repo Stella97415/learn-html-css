@@ -1,0 +1,76 @@
+body {
+  background-color: #ffc;
+}
+
+/*태그선택자*/
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+  /*p위에 마우스 올릴때마다 배경블록색깔이 바뀜*/
+
+  &:focus {
+    border: 10px solid red;
+  }
+  /*p요소는 포커스를 받을 수 없음(키보드로 안 됨). 포커스를 가질 수 없는 객체에게 p tabindex="0"을 주면 가질 수 있음*/
+}
+
+/*클래스 선택자*/
+.like {
+  color: green;
+}
+
+/*아이디 선택자*/
+#lion {
+  color: blue;
+}
+
+/*속성 선택자*/
+[title] {
+  color: purple;
+}
+
+a[href^='https'] {
+  text-decoration: none;
+}
+
+a[href$='pdf'] {
+  background-color: violet;
+}
+
+/*가상 클래스 선택자*/
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: olive;
+}
+/*한번이라도 방문한적 있는 링크는 올리브색으로 바뀜*/
+
+a:hover {
+  color: blue;
+}
+/*링크첨부된 글자 위에 마우스를 올려대면 블루로 바뀜*/
+
+a:focus {
+  color: aqua;
+}
+/*키보드 포커스가 되면 글자색이 아쿠아로 바뀜*/
+
+a:active {
+  color: chartreuse;
+}
+/*클릭햇을때 엑티브되는 순간 글자색이 바뀜 (진짜 찰나임)*/
+
+/*가상 요소 선택자*/
+h1::before {
+  content: '멋사';
+}
+/*before,after는 반드시 컨텐트 속성을 같이 사용해야함. ::는 가상요소. 비포애프터는 배경요소이므로 드래그 안됨! */
+
+h1::after {
+  content: '13기';
+}

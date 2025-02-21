@@ -1,0 +1,58 @@
+/* 박스의 테두리 border 결정하기 */
+/*안쪽여백 설정- padding*/
+.like {
+  /*border-top-width: 2px;
+  border-right: 4px;
+  border-bottom: 6px;
+  border-left: 8px;*/
+
+  /*border-width는 줄여서 위에 내용을 한번에 쓰는 거임!(시계방향)*/
+  /* border-width: 5px; 10p; 15px; 20px;
+  border-style: solid;
+  border-color: green;*/
+
+  /*제일 많이 줄인 것 보통이렇게씀*/
+  border: 5px solid green;
+
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;*/
+  /*이것도 단축표기법*/
+  padding: 20px;
+
+  /*값을 한번만 주면 네군데 동일한 값이 들어감.
+  값을 두 번 주면, 첫번째:위아래, 두번째:좌우에 들어감. 세번 넣으면 바닥으로 들어감*/
+
+  width: 150px;
+
+  /*바깥쪽 여백 - margin*/
+  margin: 50px;
+  box-sizing: border-box;
+
+  div {
+    background-color: yellow;
+  }
+}
+
+.bootcamp {
+  border: 1px solid purple;
+  padding: 0 100px;
+}
+
+/*width, hgight 속성으로 크기 지정*/
+.lion {
+  display: block;
+  border: 5px solid red;
+  padding: 10px;
+  /*인라인 상자의 높이는 라인하이트에 영향을 받는다. */
+  margin: 20px 0;
+}
+
+.cat {
+  margin: 50px 0;
+  width: 300px;
+  margin-left: -50px;
+}
+
+/*박스사이징*/
