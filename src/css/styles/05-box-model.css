@@ -11,6 +11,7 @@
   border-style: solid;
   border-color: green;*/
 
+  box-sizing: border-box;
   /*제일 많이 줄인 것 보통이렇게씀*/
   border: 5px solid green;
 
@@ -28,7 +29,6 @@
 
   /*바깥쪽 여백 - margin*/
   margin: 50px;
-  box-sizing: border-box;
 
   div {
     background-color: yellow;
@@ -50,7 +50,7 @@
 }
 
 .cat {
-  margin: 50px 0;
+  margin-bottom: 50px;
   width: 300px;
   margin-left: -50px;
 }

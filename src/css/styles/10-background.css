@@ -1,0 +1,24 @@
+body {
+  /*배경 색상*/
+  background-color: hsl(180, 50%, 80%);
+  /*배경 이미지*/
+  background-image: url(/src/assets/images/rabbit.png);
+  /*배경 이미지 반복 여부*/
+  background-repeat: no-repeat;
+  /*배경 이미지 위치*/
+  background-position: 50% 0;
+  /*background-position: 30px;
+  background-position: 40px;*/
+  /*바디 요소의 최소 높이*/
+  min-height: 100vh;
+  background-attachment: fixed;
+  /*이미지 배경 크기*/
+  background-size: contain;
+  /*단축표기법*/
+  background:
+    url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
+    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
+    linear-gradient(red, green),
+    pink;
+  /*배경이미지는 먼저 선언한 이미지가 제일 위에 쌓임*/
+}
