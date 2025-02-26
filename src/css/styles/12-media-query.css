@@ -1,0 +1,25 @@
+/* 모든 디바이스에 기본적으로 적용될 배경색 */
+/* 모든 디바이스에 글자 크기를 유연하게 설정 -vw */
+body {
+  background: yellow;
+  font-size: clamp(0.75rem, 2vw + 0.75rem, 3rem);
+
+  /*뷰포트 화면이 600이상일때 배경이 핑크로 바뀜 */
+  /* 바디 안에 중첩 할 때는 선택자가 겹치지 않게 바디를 지워야함 */
+  @media (min-width: 600px) and (max-width: 800px) {
+    background: pink;
+  }
+
+  /* 뷰포트 1000px 크기에 따라 적용될 배경색 */
+  @media (min-width: 1000px) {
+    background: lime;
+  }
+}
+
+/*
+@media (orientation: landscape) {
+  body {
+    background: orange;
+  }
+}
+*/

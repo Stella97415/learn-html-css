@@ -3,6 +3,9 @@
     "start": "live-server . --port=3000 --host=localhost --no-browser",
     "format": "prettier . --check"
   },
+  "simple-webp-converter": {
+    "src": "src/**/*.{png,jpg}"
+  },
   "devDependencies": {
     "live-server": "^1.2.2",
     "prettier": "^3.5.0"
