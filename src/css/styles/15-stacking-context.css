@@ -1,6 +1,7 @@
 @import '/src/common/best-reset.css';
 @import '/src/common/theme.css';
 @import '/src/ui/components/avatar/avatar.css';
+@import '/src/common/base.css';
 
 body {
   margin: 50px;
@@ -31,8 +32,7 @@ h1 {
       transform: scale(1.5) translate(0, -20px);
       /* opacity: 0.8; */
       /* translate:0 -20px; */
-      rotate: 3turn;
-      /* filter: none; */
+      rotate: -3turn;
       filter: sepia(60%);
     }
 
@@ -42,8 +42,8 @@ h1 {
   }
 }
 
-/* transition */
-/* case2 */
+/* Transition */
+/* case 2 */
 .case-02 {
   margin-block-start: 20px;
   display: flex;
@@ -56,17 +56,20 @@ h1 {
     text-align: center;
     align-content: center;
     background: var(--pastel-lavender);
-    transition-property: background, border-radius;
+    /* transition-property: background, border-radius;
     transition-duration: 2s, 1s;
     transition-delay: 0s, 2s;
-    /* transition-timing-function: ease; */
-    trasition:
-      background 2s 0s ease,
-      border-radius 1s 2s ease;
+    transition-timing-function: ease; */
+    /* transition 관련 단축 속성 */
+    /* transition: 
+              background 2s 0s ease, 
+              border-raius 1s 2s ease; */
+    transition: all 200ms;
 
     &:hover {
       background: var(--pastel-orange);
       border-radius: 50%;
+      rotate: 2turn;
     }
   }
 }
